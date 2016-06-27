@@ -1,0 +1,24 @@
+﻿<Window x:Class="ThreadedTcpServer_Arbeitsauftrag2.Chat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThreadedTcpServer_Arbeitsauftrag2"
+        mc:Ignorable="d"
+                Title="Chat" Height="326.515" Width="541.667" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Closed="Chat_OnClosed">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="95*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txbChat" HorizontalAlignment="Left" Height="218" Margin="10,10,0,0" TextWrapping="Wrap" Text="(text)" VerticalAlignment="Top" Width="515" IsReadOnly="True"
+         ScrollViewer.HorizontalScrollBarVisibility="Auto"
+         ScrollViewer.VerticalScrollBarVisibility="Auto"
+         ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txbEingabe" HorizontalAlignment="Left" Height="23" Margin="11,259,0,0" TextWrapping="Wrap" Text="(eingabe)" VerticalAlignment="Top" Width="388" Grid.ColumnSpan="2" KeyDown="TxbEingabe_OnKeyDown"/>
+        <Label x:Name="label" Content="Eingabe:" HorizontalAlignment="Left" Margin="10,233,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSend" Content="Senden" HorizontalAlignment="Left" Margin="280.816,259,0,0" VerticalAlignment="Top" Width="75" Click="btnSend_Click" Grid.Column="1"/>
+        <Label x:Name="label_Copy" Content="Port:" HorizontalAlignment="Left" Margin="140,233,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="lblPort" Content="port" HorizontalAlignment="Left" Margin="174,233,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+    </Grid>
+</Window>

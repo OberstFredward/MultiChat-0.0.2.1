@@ -1,0 +1,19 @@
+﻿<Window x:Class="ThreadedTcpServer_Arbeitsauftrag2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThreadedTcpServer_Arbeitsauftrag2"
+        mc:Ignorable="d"
+                Title="Chat" Height="339.78" Width="236.565" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="btnConnect" Content="Connect" HorizontalAlignment="Left" Margin="56,229,0,0" VerticalAlignment="Top" Width="113" Height="38" Click="btnConnect_Click"/>
+        <TextBox x:Name="tbxIp" HorizontalAlignment="Left" Height="23" Margin="56,188,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="IP Adresse:" HorizontalAlignment="Left" Margin="56,162,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxPort" HorizontalAlignment="Left" Height="23" Margin="56,139,0,0" TextWrapping="Wrap" Text="50000" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label2" Content="Port:" HorizontalAlignment="Left" Margin="56,113,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblStatus" Content="Status" HorizontalAlignment="Left" Margin="82,21,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2_Copy" Content="Listener Port:" HorizontalAlignment="Left" Margin="56,52,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblListenPort" Content="Port" HorizontalAlignment="Left" Margin="135,52,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
